@@ -1,0 +1,63 @@
+<!DOCKTYPE html>
+<html>
+<head>
+  <title> Travel Preferences Survey </title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <h1 id="title"> Travel Preferences Survey </h1>
+  <p id="description"> Help us understand your travel experiences and preferences by participating in our brief survey, covering topics such as favorite destinations, transport choices, and accommodation preferences. </p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name" > What is your full name?  <input class="full-width" required type="text" id="name" name="name" placeholder="Name Surname" /> </label>
+      <label id="email-label" for="email">	What is your email address?  <input class="full-width" required id="email" type="email" name="email" placeholder="email@email.com" /> </label>
+      <label for="password"> Please create a password for your account.  <small>(minimum 8 characters, only lowercase letters and numbers)</small>  <input class="full-width" type="password" id="password" pattern="[a-z0-9]{8,}" placeholder="********" > </label>
+    </fieldset>
+    <fieldset>
+      <label for="avatar"> Please upload a profile picture.<small> (png,jpeg)</small> <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"> </label>
+    <label> Tell us a little about yourself. <textarea></textarea> </label> 
+    </fieldset>
+       <label id="number-label" for="number" > How many countries have you visited?  <input  id="number" type="number" name="number" min="1" max="195" placeholder="00" /> </label>
+        <label id="favorite" for="favorite"> What is your favorite travel destination so far?  <input class="full-width" type="text" id="favorite" name="favorite" /> </label>
+        <label id="bucket-list" for="bucket-list"> What destination is at the top of your travel bucket list?  <input class="full-width" type="text" id="bucket-list" name="bucket-list" /> </label>
+       <label for="reason">What is your primary reason for traveling?  
+         <select class="full-width" name="reason" id="dropdown">
+           <option value=""> select</option>
+           <option value="leisure">Leisure </option>
+           <option value="business">Business</option>
+           <option value="family">Family visits </option>
+           <option value="education">Education</option> 
+           <option value="other">Other</option>        
+         </select> 
+      </label>
+
+      <legend>What is your preferred mode of transport for travel?</legend>
+      <label for="airplane" class="inline" > Airplane <input class="inline" type="radio" name="mode" value="airplane"  checked /> </label>
+      <label for="train" class="inline" > Train <input class="inline" type="radio" id="train" name="mode" value="train"   /> </label>
+      <label for="car" class="inline"> Car <input class="inline" type="radio" id="car" value="car" name="mode"   /> </label>
+      <label for="bus" class="inline"> Bus <input class="inline" type="radio" id="bus" value="bus" name="mode"   /> </label>
+      <label for="boat" class="inline"> Boat <input class="inline" type="radio" id="boat" value="boat" name="mode"   /> </label>
+      <label for="bicycle" class="inline"> Bicycle <input  class="inline" type="radio" id="bicycle" value="bicycle" name="mode"   /> </label>
+      <label for="other-trav-mode" class="inline">Other: <input class="inline" type="text" id="other-trav-mode" /> </label>
+
+      <legend> Which of the following travel preferences do you have?   </legend>
+      <label for="beaches" class="inline" >Beaches <input type="checkbox" value="beaches" id="beaches" class="inline" /> </label>
+      <label for="mountains" class="inline" >Mountains <input type="checkbox" value="mountains" id="mountains" class="inline" /> </label>
+      <label for="cities" class="inline">Cities <input class="inline" type="checkbox" value="cities" id="cities" /> </label>
+      <label for="countryside" class="inline">Countryside <input class="inline" type="checkbox" value="countryside" id="countryside" /> </label>
+      <label for="historical" class="inline">Historical sites <input class="inline" type="checkbox" value="historical" id="historical" /> </label>
+      <label for="other-trav-pref" class="inline">Other: <input class="inline" type="text" id="other-trav-pref" /> </label>
+
+      <legend>What type of accommodation do you prefer?</legend>
+      <label for="hotels" class="inline" > Hotels <input type="radio" id="hotels" value="hotels" name="accomodation" class="inline" checked /> </label>
+      <label for="hostels" class="inline" >	Hostels <input type="radio" id="hostels" value="hostels" name="accomodation" class="inline"  /> </label>
+      <label for="rentals" class="inline"> Vacation rentals  <input type="radio" id="rentals" value="rentals" name="accomodation" class="inline"  /> </label>
+      <label for="camping"class="inline"> Camping <input type="radio" id="camping" value="camping" name="accomodation"  class="inline" /> </label>
+      <label for="stay-with-frends" class="inline"> Staying with friends/family <input type="radio" id="stay-with-frends" value="stay-with-frends" name="accomodation" class="inline"  /> </label>
+      <label for="other-stay" class="inline" > Other <input  class="inline" type="text" id="other-stay" name="accomodation" class="inline"/> </label>
+    </fieldset>
+    <input type="submit" value="Submit" id="submit" />
+  </form>
+</body>
+</html>
